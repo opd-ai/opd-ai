@@ -8,7 +8,9 @@ Hello and welcome! We're a small open-source organization focused on creating to
 Our flagship project is a growing collection of AI-generated D&D adventures, freely available to all storytellers. Each adventure undergoes a unique seven-phase creative process, combining artificial intelligence with careful curation to produce rich, playable content that respects intellectual property rights.
 
 ### 🎨 Adventure Forge (dndbot)
-The engine behind our adventure generation, Adventure Forge is an AI-powered tool that creates complete, playable RPG content. It handles everything from narrative development to map creation, ensuring each adventure is unique and engaging.
+The engine behind our adventure generation, Adventure Forge ies an AI-powered tool that creates complete, playable RPG content. It handles everything from narrative development to map creation, ensuring each adventure is unique and engaging.
+
+- [**Experimental instance at https://dngn.me**](https://dngn.me)
 
 ### 🔧 Supporting Tools
 We've developed several supporting libraries to make our main projects possible:
