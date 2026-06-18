@@ -2,32 +2,52 @@
 
 **Tools for people who'd rather own their stack than rent it.**
 
-OPD-AI builds open-source software for creative and technical independence. The repositories here aren't a random collection — they stack. Each layer removes a dependency on someone else's platform, so an individual creator, gamemaster, or self-hoster can do alone what normally requires a company behind them. You can adopt one piece or the whole ladder.
+The repositories here aren't a random collection — they stack. Each layer removes a dependency on someone else's platform, so a solo creator, gamemaster, or self-hoster can do alone what usually takes a company. Adopt one piece or the whole ladder.
 
-## Own your output
+## 🎨 Generate content
 
-The creative engine is where most people start. **dndbot** (Adventure Forge) generates complete, system-agnostic D&D adventure series through a seven-phase pipeline, and the results live publicly in **opd-ai.github.io** (The Dungeon Scribe's Vault). **bookie** compiles that markdown into professionally typeset PDF books with automatic chapters and tables of contents, while **asset-generator** (SwarmUI) and **horde** (Stable Horde) produce the artwork. For people who want to *run* games rather than write them, **goldbox-rpg** is a Gold Box–style RPG engine and **bostonfear** is a rules-only multiplayer engine for Lovecraftian tabletop play, with **awesome-tabletop-rpgs** cataloguing the free systems to build on.
+**dndbot** (Adventure Forge) writes complete, system-agnostic D&D adventure series through a seven-phase pipeline. The output lives in **opd-ai.github.io** (The Dungeon Scribe's Vault).
 
-The **unsuite** is the ambitious next step: a fully procedural game-asset pipeline split into focused generators — humanoids (**unpeople**), creatures (**unbeasts**), gear, clothing, weapons, environment meshes, materials, particle and spell VFX, animations, names, maps, props, sounds, and more. The goal is a complete library so a solo developer can populate an entire world without licensing assets from anyone. *Status: the unsuite is in active development and currently unfinished — **unpeople** is the working, production-ready generator that anchors the rest, since clothing, armor, and animations all conform to its base bodies.*
+## 🖼️ Make the assets
 
-## Own your income
+**asset-generator** (SwarmUI) and **horde** (Stable Horde) produce artwork. **bookie** compiles markdown into typeset PDF books with chapters and tables of contents.
 
-Creative work only stays independent if it can sustain itself without a middleman. **paywall** is cryptocurrency-based access-control middleware (with **paywall-cases** documenting real patterns), and it powers **store**, **music** (a storefront for independent artists), and **createon** — a self-hosted Patreon alternative. Underneath, **moneroger**, **go-monero-wallet**, **go-randomx**, **node-xmr-pool**, and **nmcd** give Go developers a full Monero and Namecoin toolkit, so payments never route through a platform that can cut you off.
+## 🎲 Run the games
 
-## Own your AI
+**goldbox-rpg** is a Gold Box–style RPG engine. **bostonfear** is a rules-only multiplayer engine for Lovecraftian play. **awesome-tabletop-rpgs** catalogues the free systems to build on.
 
-You shouldn't need a data center to use AI. **minilm** runs small quantized models on old hardware, **cluster** lets you self-host a 2-to-X node LLM cluster, and **Open-LLM-VTuber** and **desktop-companion** turn local models into voice- and Live2D-driven characters. For developers, **Anti-Slop-Guard** and **continue** keep AI-assisted coding honest and CI-enforceable, and **becrabbening** (with the **firefox** fork) is a systematic methodology for incrementally rewriting C/C++ in Rust without merge conflicts.
+## 🧩 The unsuite (in progress)
 
-## Own your network and machine
+A fully procedural game-asset pipeline split into focused generators: creatures, gear, weapons, meshes, materials, VFX, animations, names, maps, props, and sounds — so one developer can fill an entire world without licensing anything.
 
-At the foundation, OPD-AI is rebuilding private communication from the ground up. **toxcore** is a pure-Go libtoxcore with modern cryptography (X3DH, double-ratchet, MLKEM-768, async messaging) and C bindings as a drop-in replacement, alongside a Rust **tox** and a compatibility **toxcore-testnet**. On top of Tox sit clients (**mtox**, **dtox**, **go-ratox**), mesh and VPN-style overlays (**granulosa**, **muscimol**), matchmaking (**methane**), and bridges to other anonymity networks (**itox**, **toxpt**). Pure-Go reimplementations of **go-tor**, **go-cjdns**, and the C# **i2p-cs-renewed** round out the privacy layer, while **diagon** packages it all into a Debian distribution for running hidden services — and **heads-dell-netbooks** takes ownership all the way down to verified Coreboot firmware.
+*Status: unfinished and in active development. **unpeople** is the working, production-ready generator that anchors the rest — clothing, armor, and animations all conform to its base bodies.*
 
-## The infrastructure and Go toolbox that hold it together
+## 💰 Get paid without a middleman
 
-Supporting everything are the self-hosting utilities — **cluster**, **app-streamer**, **docker-package**, **go-gamelaunch** (and its client/web variants), and the **go-jf-org**/**go-jf-watch** Jellyfin tools — plus a deep bench of pure-Go libraries: **opus**/**magnum** (audio), **go-utp**, **go-c-bindgen**, **go2c**, **pure-go-dl**, the **gui**/**ui2** toolkits, and diagnostic tools like **tuimap**, **go-conky**, and **go-stats-generator**.
+**paywall** is crypto-based access-control middleware (**paywall-cases** shows real patterns). It powers **store**, **music** (for independent artists), and **createon**, a self-hosted Patreon alternative. **moneroger**, **go-monero-wallet**, **go-randomx**, **node-xmr-pool**, and **nmcd** are the underlying Monero/Namecoin toolkit.
+
+## 🤖 Run AI on your own hardware
+
+**minilm** runs small quantized models on old machines. **cluster** self-hosts a 2-to-X node LLM cluster. **Open-LLM-VTuber** and **desktop-companion** turn local models into voice- and Live2D-driven characters.
+
+## ⌨️ Keep AI-assisted coding honest
+
+**Anti-Slop-Guard** and **continue** make AI code checks enforceable in CI. **becrabbening** (with the **firefox** fork) is a method for incrementally rewriting C/C++ in Rust without merge conflicts.
+
+## 🕸️ Communicate privately
+
+**toxcore** is a pure-Go libtoxcore with modern crypto (X3DH, double-ratchet, MLKEM-768, async messaging) and drop-in C bindings, alongside a Rust **tox** and **toxcore-testnet**. Clients (**mtox**, **dtox**, **go-ratox**), overlays (**granulosa**, **muscimol**), matchmaking (**methane**), and bridges (**itox**, **toxpt**) build on top.
+
+## 🧅 Own the network and the machine
+
+Pure-Go **go-tor** and **go-cjdns**, the C# **i2p-cs-renewed**, the **diagon** Debian distro for hidden services, and **heads-dell-netbooks** for verified Coreboot firmware.
+
+## 🛠️ Self-host and build in Go
+
+Infrastructure: **app-streamer**, **docker-package**, **go-gamelaunch** (+ client/web), and the **go-jf-org**/**go-jf-watch** Jellyfin tools. Libraries: **opus**/**magnum**, **go-utp**, **go-c-bindgen**, **go2c**, **pure-go-dl**, the **gui**/**ui2** toolkits, and diagnostics like **tuimap**, **go-conky**, and **go-stats-generator**.
 
 ---
 
-**Philosophy:** open source, creator ownership, minimal barriers to entry, Bitcoin/Monero for sustainability, and AI as a creative assistant — never a replacement. Everything is free to use, modify, and improve.
+**Philosophy:** open source · creator ownership · minimal barriers to entry · Bitcoin/Monero for sustainability · AI as assistant, never replacement.
 
 🌐 [dngn.me](https://dngn.me) · *May your dice roll true.*
