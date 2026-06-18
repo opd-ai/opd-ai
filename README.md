@@ -50,4 +50,4 @@ Infrastructure: **app-streamer**, **docker-package**, **go-gamelaunch** (+ clien
 
 **Philosophy:** open source · creator ownership · minimal barriers to entry · Bitcoin/Monero for sustainability · AI as assistant, never replacement.
 
-🌐 [dngn.me](https://dngn.me) · *May your dice roll true.*
+🌐 · *May your dice roll true.*
