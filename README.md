@@ -4,6 +4,8 @@
 
 The repositories here aren't a random collection — they stack. Each layer removes a dependency on someone else's platform, so a solo creator, gamemaster, or self-hoster can do alone what usually takes a company. Adopt one piece or the whole ladder.
 
+ - The work continues: Donate to support `43H3Uqnc9rfEsJjUXZYmam45MbtWmREFSANAWY5hijY4aht8cqYaT2BCNhfBhua5XwNdx9Tb6BEdt4tjUHJDwNW5H7mTiwe`
+
 ## 🎨 Generate content
 
 **dndbot** (Adventure Forge) writes complete, system-agnostic D&D adventure series through a seven-phase pipeline. The output lives in **opd-ai.github.io** (The Dungeon Scribe's Vault).
