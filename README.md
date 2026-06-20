@@ -30,11 +30,11 @@ A fully procedural game-asset pipeline split into focused generators: creatures,
 
 ## 🤖 Run AI on your own hardware
 
-**minilm** runs small quantized models on old machines. **cluster** self-hosts a 2-to-X node LLM cluster. **Open-LLM-VTuber** and **desktop-companion** turn local models into voice- and Live2D-driven characters.
+**minilm** runs small quantized models on old machines. **cluster** self-hosts a 2-to-X node LLM cluster. **desktop-companion** turns local models into voice- and Live2D-driven characters.
 
 ## ⌨️ Keep AI-assisted coding honest
 
-**Anti-Slop-Guard** and **continue** make AI code checks enforceable in CI. **becrabbening** (with the **firefox** fork) is a method for incrementally rewriting C/C++ in Rust without merge conflicts.
+**becrabbening** (with the **firefox** fork) is a method for incrementally rewriting C/C++ in Rust without merge conflicts.
 
 ## 🕸️ Communicate privately
 
